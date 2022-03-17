@@ -1,10 +1,7 @@
 const mongoose = require("mongoose");
 
-const accessString =
-  "mongodb+srv://Jaheim:developer@nodeexpressprojects.v89ck.mongodb.net/NodeExpressProjects?retryWrites=true&w=majority";
-
 const connectDB = url => {
-  return mongoose.connect(accessString, {
+  return mongoose.connect(url, {
     useNewUrlParser: true,
     useCreateIndex: true,
     useFindAndModify: false,
